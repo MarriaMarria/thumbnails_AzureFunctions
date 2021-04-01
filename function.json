@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "images-original/{name}",
+      "connection": "mariathumbnail_STORAGE",
+      "dataType": "binary"
+    },
+    {
+      "name": "outputBlob",
+      "path": "images-thumbnail/thumb_{name}",
+      "connection": "mariathumbnail_STORAGE",
+      "direction": "out",
+      "type": "blob"
+    }
+  ]
+}
