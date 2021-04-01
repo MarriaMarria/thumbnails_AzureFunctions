@@ -1,3 +1,13 @@
+// YOU CANNOT SEND EMAILS FROM AZURE WITHOUT THIRD PARTY APPS
+// https://stackoverflow.com/questions/58246398/how-do-i-send-email-from-an-azure-function-app
+
+// SEND EMAILS WITH SENDGRID
+// https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-sendgrid?tabs=javascript
+
+
+
+
+// this will work only locally
 require('dotenv').config();
 const nodemailer = require("nodemailer");
 

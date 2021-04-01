@@ -1,0 +1,10 @@
+name: Testing
+on:
+  push:
+    branches: [ master ]
+jobs:
+  first_test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: test
+      run: echo "Hi there!"
